@@ -77,8 +77,8 @@ namespace Course
         public override string? ToString()
         {
             return "Imposto bruto total: " + GrossTax().ToString("F2", CultureInfo.InvariantCulture)
-                + "Abatimento: " + (GrossTax() - TaxRebate()).ToString("F2", CultureInfo.InvariantCulture)
-                + "Imposto devido: " + TaxRebate().ToString("F2", CultureInfo.InvariantCulture);
+                + "\nAbatimento: " + (GrossTax() - TaxRebate()).ToString("F2", CultureInfo.InvariantCulture)
+                + "\nImposto devido: " + TaxRebate().ToString("F2", CultureInfo.InvariantCulture);
         }
     }
 }
